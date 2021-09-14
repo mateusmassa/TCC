@@ -7,14 +7,14 @@ import matplotlib.gridspec as gridspec # carrega a biblioteca gridspec
 from drawnow import *                  # carrega a biblioteca drawnow
 from array import array                # carrega a biblioteca array
 
+# ----- Setup the Serial COM Port ------
+arduinoData = serial.Serial( port='/dev/ttyUSB0', baudrate = 9600, parity=serial.PARITY_NONE, 
+                             stopbits=serial.STOPBITS_ONE, bytesize=serial.EIGHTBITS, timeout=1)
+
 shearF = list()
 normalF = list()
 vertF = list()
 horiF = list()
-
-# ----- Setup the Serial COM Port ------
-arduinoData = serial.Serial( port='/dev/ttyUSB0', baudrate = 9600, parity=serial.PARITY_NONE, 
-                             stopbits=serial.STOPBITS_ONE, bytesize=serial.EIGHTBITS, timeout=1)
 
 plt.ion()
 

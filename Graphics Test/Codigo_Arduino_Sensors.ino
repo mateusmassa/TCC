@@ -1,9 +1,9 @@
-String leituraSerial;
 const char* sensor1 = "*1B1";
 float valor_s1 = 0;
 float valor_s2 = 0;
 float valor_s3 = 0;
 float valor_s4 = 0;
+String leituraSerial = "";
 String sensor = "";
 String sensor_s1 = "";
 String sensor_s2 = "";
@@ -15,8 +15,6 @@ void setup() {
 }
 
 void loop() {
-  // Serial.println("0.00");
-  //delay(2000);
   
   if(Serial.available() > 0){
     
@@ -40,12 +38,3 @@ void loop() {
     }
   }
 }  
-
-//void setup() {
-//  Serial.begin(9600);
-//}
-//
-//void loop() {
-//  delay(5000);
-//  Serial.println("COMUNICACAO SERIAL VIA USB");
-//}

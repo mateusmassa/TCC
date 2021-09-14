@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
 import serial                          # carrega a biblioteca serial
-from time import sleep                 # carrega a biblioteca time
 import numpy                           # carrega a biblioteca numpy
 import matplotlib.pyplot as plt        # carrega a biblioteca pyplot
 import matplotlib.gridspec as gridspec # carrega a biblioteca gridspec

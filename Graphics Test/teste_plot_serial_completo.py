@@ -5,7 +5,6 @@ import numpy                           # carrega a biblioteca numpy
 import matplotlib.pyplot as plt        # carrega a biblioteca pyplot
 import matplotlib.gridspec as gridspec # carrega a biblioteca gridspec
 from drawnow import *                  # carrega a biblioteca drawnow
-from array import array                # carrega a biblioteca array
 
 # ----- Setup the Serial COM Port ------
 arduinoData = serial.Serial( port='/dev/ttyUSB0', baudrate = 9600, parity=serial.PARITY_NONE, 

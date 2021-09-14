@@ -48,10 +48,10 @@ def handler(signum, frame):
     
     sleep(0.1)
     
-#     ser3.write('R\r')
-#     d = ser3.readline()
-#     d = d[:-1]
-#     d = d[0] + d[4:]
+    ser3.write('R\r')
+    d = ser3.readline()
+    d = d[:-1]
+    d = d[0] + d[4:]
     
     sleep(0.1)
          

@@ -10,6 +10,9 @@ normalF = list()
 vertF = list()
 horiF = list()
 
+plt.ion()
+
+cnt = 0
 
 # ----- Setup the Serial COM Port ------
 ser0 = serial.Serial(
@@ -47,10 +50,6 @@ stopbits=serial.STOPBITS_ONE,
 bytesize=serial.EIGHTBITS,
 timeout=1
 )
-
-plt.ion()
-
-cnt = 0
 
 #fuction validationString
 def validString(a):
@@ -156,8 +155,6 @@ while 1:
             normalF.pop(0)
             vertF.pop(0)
             horiF.pop(0)
-            
-            #input("Aperte Enter para continuar: ")
         
     else:
         print("Aguardando entrada de dados!")       

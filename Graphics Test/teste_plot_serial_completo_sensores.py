@@ -51,8 +51,8 @@ bytesize=serial.EIGHTBITS,
 timeout=1
 )
 
-#fuction validationString
-def validString(a):
+#fuction stringTofloat
+def stringTofloat(a):
     if (len(a) > 0):
         a = a.replace("\\n", "")
         a = a.replace("b'", "")
@@ -137,10 +137,10 @@ while 1:
         vert = a
         hori = d
                 
-        shearFloat = validString(shear)
-        normalFloat = validString(normal)
-        vertFloat = validString(vert)
-        horiFloat = validString(hori)
+        shearFloat = stringTofloat(shear)
+        normalFloat = stringTofloat(normal)
+        vertFloat = stringTofloat(vert)
+        horiFloat = stringTofloat(hori)
         
         shearF.append(shearFloat)
         normalF.append(normalFloat)
